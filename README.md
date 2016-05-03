@@ -5,15 +5,22 @@
 
 As a user
 So that I can keep track of important websites
-I want to see a list of links
+I want to see a list of links on the homepage
   Acceptance Criteria
     it's done when the user can see links
     it's done when the user can click links
 
+As a user
+So that I can find things I have recently bookmarked
+I want to be able to see the links in descending chronological order
+  Acceptance Criteria
+    it's done when the links are in the order I have saved them in
+
+
 
 As a user
 So that I can close some of my tabs
-I want to be able to add new links
+I want to be able to save a site's address and title to my bookmark manager
   Acceptance Criteria
     it's done when the user can input text
     it's done when the inputted text is posted

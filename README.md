@@ -39,3 +39,16 @@ I want to be able to filter the links by tags
   Acceptance Criteria
     it's done when the user can search
     it's done when the user can search by tag
+
+CRUD
+Create => inserts a new row
+Read => selects information we would like to read
+Update => changes the existing values in the tuple
+Delete => removes a row from the table
+
+SQL
+Structured Query Language
+
+Examples
+Insert, select, update, delete
+

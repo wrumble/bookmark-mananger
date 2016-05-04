@@ -4,6 +4,7 @@ feature 'Adding tags' do
     fill_in 'title', with: 'Capybara'
     fill_in 'url', with: 'http://www.capybara.com'
     fill_in 'tags', with: 'Animals'
+
     click_button 'Add link'
     link = Link.first
     expect(link.tags.map(&:name)).to include('Animals')

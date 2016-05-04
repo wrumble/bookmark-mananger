@@ -1,6 +1,7 @@
 ENV["RACK_ENV"] ||= "test"
 require 'capybara/rspec'
-require './app/models/link'
+require './app/models/data_mapper_setup'
+
 require './app/app'
 require 'database_cleaner'
 require 'features/web_helpers.rb'

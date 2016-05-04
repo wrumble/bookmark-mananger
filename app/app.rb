@@ -1,9 +1,10 @@
 require 'sinatra/base'
 require_relative 'models/link'
+ENV["RACK_ENV"] ||= "development"
 
 class BookmarkManager < Sinatra::Base
 
-	get '/links' do
+	get 'https://waynemaceybookmarks.herokuapp.com/links' do
 		@links = Link.all
 		erb :'links/index'
 	end

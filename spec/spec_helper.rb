@@ -1,4 +1,4 @@
-ENV["RACK_ENV"] = "test"
+ENV["RACK_ENV"] = "localhost/bookmark_manager_test"
 
 require File.join(File.dirname(__FILE__), '..', 'app/app.rb')
 

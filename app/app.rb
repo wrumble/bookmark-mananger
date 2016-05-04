@@ -2,19 +2,20 @@ require 'sinatra/base'
 require_relative 'models/link'
 
 class BookmarkManager < Sinatra::Base
-	
+
 	get '/links' do
 		@links = Link.all
 		erb :'links/index'
 	end
 
-	# get '/links/new' do
+	get '/links/new' do
+		erb :'links/new'
+	end
 
-	# end
+	post '/links/save' do
+		Link.create(:title => params[:title], :url => params[:url])
+		redirect '/links'
+	end
 
-	# post '/links' do
-		
-	# end
-
-  run! if app_file == $0	
+  run! if app_file == $0
 end
